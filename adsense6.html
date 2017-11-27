@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adsense 6</title>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js?ver=1.10.2'></script>
+  
+  
+ <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+
+      <script>
+        googletag.cmd.push(function() {
+           
+          	/* 
+				INICIJALIZACIJA VARIJABLI
+			*/
+			
+			var content_second= googletag.sizeMapping().
+   addSize([0, 0], [[300, 250],[300, 200]]).
+   addSize([360, 400], [[336, 280],[300, 250],[336, 200]]).
+    addSize([403, 400], [[378, 280],[336, 280],[300, 250],[378, 200]]).
+    addSize([480, 400], [[450, 280],[336, 280],[300, 250],[450, 200]]).
+   addSize([620, 400], [[580, 280], [336, 280],[300, 250],[580, 200]]).build();
+   
+            
+            var ad1={itterations:5,current_floor:12,ad_unit:"/88449691/kz-middle",slot_id_base:"greip-1480267586137",ad_dimensions:[300,250],targeting_key:"Greip",start_id:"div-gpt-ad-1480267586137-0",size_mapping:content_second},ads_array=[];ads_array.push(ad1);
+            
+            if (screen.width<832) {
+				// mobile
+				ad1["current_floor"]=10;
+				
+			} else {
+				// desktop
+				ad1["current_floor"]=14;
+			}
+			
+			
+            console.log (ad1["current_floor"]);
+            
+            
+			for(i=0;i<ads_array.length;i++)0<ads_array[i].size_mapping.length?googletag.defineSlot(ads_array[i].ad_unit,ads_array[i].ad_dimensions,ads_array[i].start_id).defineSizeMapping(ads_array[i].size_mapping).addService(googletag.pubads()).setTargeting(ads_array[i].targeting_key,"f"+ads_array[i].current_floor):googletag.defineSlot(ads_array[i].ad_unit,ads_array[i].ad_dimensions,ads_array[i].start_id).addService(googletag.pubads()).setTargeting(ads_array[i].targeting_key,"f"+ads_array[i].current_floor);
+			insertNextAd(ad1);
+			function insertNextAd(t){googletag.pubads().addEventListener("slotRenderEnded",function(e){t.itterations>0&&e.isEmpty&&e.slot.J===t.ad_unit&&(t.itterations=t.itterations-1,t.current_floor=t.current_floor-1,t.start_id=t.slot_id_base+t.current_floor,document.getElementById(e.slot.getSlotElementId()).innerHTML="",document.getElementById(e.slot.getSlotElementId()).setAttribute("id",t.start_id),googletag.defineSlot(t.ad_unit,t.ad_dimensions,t.start_id).defineSizeMapping(t.size_mapping).addService(googletag.pubads()).setTargeting(t.targeting_key,"f"+t.current_floor),googletag.display(t.start_id))})}
+        
+			/* 
+				OSTATAK GPT KODA
+			*/
+			
+			googletag.pubads().collapseEmptyDivs(); 
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>  
+    
+    
+     
+  
+  
+
+
+</head>
+
+<body style="max-width: 1200px">
+
+	
+	<div id="sukka">
+			sukka
+		</div>	
+		
+
+
+
+
+<div id="sukka">
+			dukka
+		</div>	
+
+
+
+<!-- MIDDLE - SECOND -->
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1480267586137-0'); });
+</script>
+<div id='div-gpt-ad-1480267586137-0' >
+</div>
+
+	<div id="sukka">
+			sukka
+		</div>	
+
+
+</body>
+</html>
